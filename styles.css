@@ -1,0 +1,49 @@
+.recipeBlock {
+    background-color: lavender;
+    color: lavenderblush;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+.recipeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20vh 20vh 20vh repeat(5, auto);
+    background-color: rgb(255, 255, 200);
+    gap: 5px;
+    padding: 5px;
+}
+.recipeTitle {
+    grid-column: 1 /-1;
+    font-size: 50px;
+    color: white;
+    -webkit-text-stroke: black 0.1px;
+}
+.recipeImage1 {
+    grid-area: 2 / 1 / span2 / 4;
+    background-color: coral;
+    border: 5px solid red; 
+    overflow: hidden;
+}
+#img1 {
+    border: 5px solid black;
+    overflow: hidden;
+
+}
+.ingredientsBlock {
+    grid-area: 3 / 2 / 5 /-1;
+    background-color: coral;
+    border-radius: 35px;
+    border: solid lemonchiffon 5px;
+    justify-items: center;
+}
+.instructionsBlock {
+    grid-area: auto / 1 / auto / -1;
+    background-color: hotpink;
+    border: dashed 5px ;
+    padding: 5px;
+}
+.notesBlock {
+    grid-area: auto / 1 / auto / -1;
+    background-color: rgb(90, 60, 195);
+    padding: 5px;
+}
